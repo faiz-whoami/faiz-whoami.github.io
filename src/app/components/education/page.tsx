@@ -1,6 +1,10 @@
 "use client";
-import { educations } from "@/../utils/Data/educations";
-import { GraduationCap, Calendar, School } from "lucide-react";
+import {
+  certifications,
+  educations,
+  languages,
+} from "@/../utils/Data/educations";
+import { Award, GraduationCap, Calendar, School } from "lucide-react";
 import SectionReveal from "../SectionReveal";
 import Tilt from "react-parallax-tilt";
 
@@ -71,6 +75,27 @@ function Education() {
                 </Tilt>
               </SectionReveal>
             ))}
+
+            <SectionReveal direction="right" delay={0.2}>
+              <div className="p-8 rounded-3xl border border-white/10 bg-white/[0.02]">
+                <div className="flex items-center gap-3 text-red-500 mb-6">
+                  <Award className="w-5 h-5" />
+                  <span className="text-xs font-bold uppercase tracking-[0.3em]">
+                    Certifications
+                  </span>
+                </div>
+                <ul className="flex flex-col gap-3">
+                  {certifications.map((item) => (
+                    <li
+                      key={item}
+                      className="text-slate-300 text-sm md:text-base leading-relaxed"
+                    >
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </SectionReveal>
           </div>
 
           <div className="order-first lg:order-last">
@@ -84,10 +109,25 @@ function Education() {
                       Knowledge
                     </span>
                   </h2>
-                  <p className="text-slate-400 text-lg leading-relaxed font-medium italic">
-                    "Education is the most powerful weapon which you can use to
-                    change the world."
+                  <p className="text-slate-400 text-lg leading-relaxed font-medium">
+                    Computer science at IIUI, plus coursework in AI engineering,
+                    machine learning, deep learning, and Android development.
                   </p>
+                  <div className="flex flex-col gap-3">
+                    {languages.map((language) => (
+                      <div
+                        key={language.name}
+                        className="flex items-center justify-between gap-4 border-b border-white/5 pb-3"
+                      >
+                        <span className="text-white font-semibold">
+                          {language.name}
+                        </span>
+                        <span className="text-xs uppercase tracking-widest text-slate-500">
+                          {language.level}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
                   <div className="w-20 h-1 bg-gradient-to-r from-red-600 to-transparent rounded-full mx-auto lg:mx-0" />
                 </div>
               </div>

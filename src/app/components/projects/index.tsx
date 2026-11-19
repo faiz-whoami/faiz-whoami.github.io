@@ -5,7 +5,7 @@ import Link from "next/link";
 import ProjectCard from "./project-card";
 
 const Projects = () => {
-  const displayedProjects = projectsData.slice(0, 3);
+  const displayedProjects = projectsData.slice(0, 4);
   return (
     <section
       id="projects"
@@ -37,12 +37,12 @@ const Projects = () => {
               </span>
             </h2>
             <p className="mt-6 max-w-2xl text-slate-400 text-lg leading-relaxed font-medium mx-auto">
-              A selection of high-impact digital solutions, built with focus on
-              scalability, performance, and exceptional user experience.
+              Selected work across community finance, marketplaces, financial
+              SaaS, and healthcare — from system design through production.
             </p>
           </div>
 
-          <div className="grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full">
+          <div className="grid gap-10 sm:grid-cols-1 md:grid-cols-2 w-full">
             {displayedProjects.map((project) => (
               <ProjectCard key={project.id} project={project} />
             ))}

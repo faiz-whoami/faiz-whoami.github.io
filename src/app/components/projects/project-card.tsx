@@ -66,7 +66,11 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
 
       <Card className="relative flex flex-col h-full justify-between border border-white/10 bg-[#050505]/20 backdrop-blur-xl rounded-2xl shadow-2xl overflow-hidden transition-all duration-500 hover:border-red-600/50 hover:shadow-red-600/10">
         <div className="flex-1">
-          <div className="relative overflow-hidden aspect-video">
+          <div
+            className={`relative overflow-hidden aspect-video ${
+              project.imageFit === "contain" ? "bg-white/[0.03]" : ""
+            }`}
+          >
             {project.videos?.[0] ? (
               <video
                 src={project.videos[0]}
@@ -85,7 +89,11 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
                 width={800}
                 height={450}
                 alt={project.name}
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                className={`w-full h-full transition-transform duration-700 group-hover:scale-110 ${
+                  project.imageFit === "contain"
+                    ? "object-contain p-6"
+                    : "object-cover"
+                }`}
               />
             ) : (
               <div className="w-full h-full bg-slate-900 flex items-center justify-center">
@@ -94,7 +102,11 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
             )}
 
             {/* Overlay Gradient */}
-            <div className="absolute inset-0 bg-gradient-to-t from-[#050505] to-transparent opacity-80" />
+            <div
+              className={`absolute inset-0 bg-gradient-to-t from-[#050505] to-transparent ${
+                project.imageFit === "contain" ? "opacity-40" : "opacity-80"
+              }`}
+            />
 
             {isNewProject(project.date) && (
               <div className="absolute top-4 right-4 bg-gradient-to-r from-red-600 to-red-900 text-white px-3 py-1 rounded-full flex items-center gap-1.5 shadow-lg animate-pulse z-10 border border-white/10">

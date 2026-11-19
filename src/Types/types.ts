@@ -19,6 +19,7 @@ interface Project {
   date: string;
   images: string[];
   videos?: string[];
+  imageFit?: "cover" | "contain";
 }
 export interface ProjectCardProps {
   project: Project;

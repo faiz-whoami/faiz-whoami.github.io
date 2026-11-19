@@ -69,12 +69,20 @@ const ProjectDetails = async ({ params }: Props) => {
 
           <div className="relative z-10 p-8 lg:p-16 flex flex-col lg:flex-row gap-12 items-center">
             {/* Project Banner Image */}
-            <div className="w-full lg:w-1/2 aspect-video relative rounded-2xl overflow-hidden shadow-2xl border border-white/10 group">
+            <div
+              className={`w-full lg:w-1/2 aspect-video relative rounded-2xl overflow-hidden shadow-2xl border border-white/10 group ${
+                project.imageFit === "contain" ? "bg-white/[0.03]" : ""
+              }`}
+            >
               <Image
                 src={project.images?.[0] || "/placeholder/placeholder.png"}
                 alt={project.name}
                 fill
-                className="object-cover transition-transform duration-700 group-hover:scale-105"
+                className={`transition-transform duration-700 group-hover:scale-105 ${
+                  project.imageFit === "contain"
+                    ? "object-contain p-8"
+                    : "object-cover"
+                }`}
                 priority
               />
             </div>
@@ -178,7 +186,11 @@ const ProjectDetails = async ({ params }: Props) => {
                             src={image}
                             alt={`${project.name} Screenshot ${index + 1}`}
                             fill
-                            className="object-cover transition-transform duration-700 group-hover:scale-110 shadow-2xl opacity-80 group-hover:opacity-100"
+                            className={`transition-transform duration-700 group-hover:scale-110 shadow-2xl opacity-80 group-hover:opacity-100 ${
+                              project.imageFit === "contain"
+                                ? "object-contain p-6 bg-white/[0.03]"
+                                : "object-cover"
+                            }`}
                           />
                           <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-transparent opacity-60" />
                         </div>

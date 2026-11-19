@@ -140,14 +140,14 @@ const HeroSection = () => {
               <span className="text-white font-bold">{personalData.name}</span>,
               a professional
               <span
-                className="text-red-500 ml-2 font-bold inline-block min-w-[200px]"
+                className="text-red-500 ml-2 font-bold inline-block min-w-[240px]"
                 ref={designationRef}
               >
                 {personalData.designation}
               </span>
               <br />
-              dedicated to building high-performance, user-centric web
-              applications.
+              building web and mobile products across the full lifecycle, from
+              system design to production.
             </p>
           </div>
 
@@ -234,7 +234,7 @@ const HeroSection = () => {
                     <span className="text-slate-600 italic">03</span>
                     <p className="ml-4">
                       <span className="text-slate-200">focus:</span>{" "}
-                      <span className="text-red-300">'Fullstack Mastery'</span>,
+                      <span className="text-red-300">'Web & Mobile'</span>,
                     </p>
                   </div>
                   <div className="flex gap-4">
@@ -242,7 +242,7 @@ const HeroSection = () => {
                     <p className="ml-4">
                       <span className="text-slate-200">skills:</span> [
                       <span className="text-red-300">
-                        'React Native', NestJS', 'React', 'TypeScript'
+                        'TypeScript', 'React', 'NestJS', 'React Native'
                       </span>
                       ],
                     </p>

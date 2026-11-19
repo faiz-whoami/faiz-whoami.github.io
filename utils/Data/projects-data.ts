@@ -1,27 +1,98 @@
 export const projectsData = [
   {
     id: 1,
+    name: "Sarmaya",
+    description:
+      "A community savings and lending platform that digitizes contributions, loans, voting, repayments, and member financial tracking.",
+    tools: ["Full Stack", "System Design", "Database Design", "Product"],
+    role: "Product Builder · Full Stack",
+    code: "",
+    demo: "",
+    date: "",
+    images: [
+      "/projects/sarnaya/Sarmaya%20Growth%20Finance%20Logo.png",
+      "/projects/sarnaya/Glossy%20Emerald%20S%20Growth%20Logo.png",
+    ],
+    imageFit: "contain" as const,
+    videos: [""],
+    highlights: [
+      "Designed and built a platform to digitize community-based savings, lending, contributions, voting, and repayment workflows.",
+      "Translated a manual financial process into a structured software product, contributing to requirements, domain modeling, database design, architecture, and development.",
+      "Implemented workflows for contributions, loans, repayments, member management, voting, and financial tracking.",
+    ],
+    challenges: [
+      "Turning an informal community finance process into clear domain rules and data models.",
+      "Keeping member, loan, and repayment workflows consistent as the product grew.",
+    ],
+  },
+  {
+    id: 2,
+    name: "MecConnect",
+    description:
+      "A marketplace MVP connecting mechanics and customers, with escrow payments, job bidding, wallets, and dispute handling.",
+    tools: ["React Native", "Expo", "NestJS", "MongoDB", "Stripe Connect"],
+    role: "Full Stack Developer",
+    code: "",
+    demo: "",
+    date: "",
+    images: ["/projects/mecconnect/Mec-Connect-Logo.png"],
+    imageFit: "contain" as const,
+    videos: [""],
+    highlights: [
+      "Built a marketplace application connecting mechanics and customers, with an escrow-based payment workflow using Stripe Connect.",
+      "Developed job lifecycle workflows covering posting, bidding, acceptance, completion, and admin-controlled fund release, with dispute handling.",
+      "Implemented wallet functionality and transaction tracking for customer and mechanic accounts.",
+    ],
+    challenges: [
+      "Modeling escrow so funds stay held until an admin-controlled release.",
+      "Keeping job state, wallets, and disputes in sync across mobile and backend.",
+    ],
+  },
+  {
+    id: 3,
     name: "MyCashCanvas",
     description:
-      "A live showcase website for MyCashCanvas, focused on a polished public-facing experience and clear conversion flow.",
-    tools: ["Live Website", "Responsive UI", "Web Design"],
-    role: "Frontend Developer",
+      "A financial management SaaS for earnings, transactions, analytics, and an AI-powered CashBot, with Stripe payment workflows.",
+    tools: ["React", "NestJS", "Node.js", "MongoDB", "Stripe"],
+    role: "Full Stack Developer",
     code: "",
     demo: "https://mycashcanvas.com",
     date: "",
     images: ["/projects/mycashcanvas/576_Cash Canvas-01.jpg"],
     videos: [""],
     highlights: [
-      "Built a clean, conversion-focused landing experience for the product.",
-      "Designed a responsive UI that adapts smoothly across screen sizes.",
+      "Owned the product lifecycle across system design, frontend and backend development, database architecture, and payment workflows.",
+      "Built earnings management, transaction tracking, and analytics features, including an AI-powered CashBot experience.",
     ],
     challenges: [
-      "Keeping the layout visually clear while presenting concise messaging.",
-      "Maintaining strong responsiveness and fast first impressions.",
+      "Designing payment and transaction flows that stay reliable in production.",
+      "Presenting financial analytics in a way that stays clear for everyday users.",
     ],
   },
   {
-    id: 2,
+    id: 4,
+    name: "EmoyenMed",
+    description:
+      "A healthcare and learning platform spanning a mobile app, admin web portal, backend APIs, and gamified health tracking.",
+    tools: ["React Native", "Expo", "NestJS", "MongoDB", "OpenAPI"],
+    role: "Full Stack Developer",
+    code: "",
+    demo: "https://emoyenmed.com",
+    date: "",
+    images: ["/projects/emoyen/icon.png"],
+    videos: [""],
+    highlights: [
+      "Contributed to a healthcare-focused platform spanning a mobile app, admin web portal, backend APIs, and database management.",
+      "Implemented authentication, gamified learning modules, health tracking, and a reward-based marketplace.",
+      "Supported API documentation with OpenAPI/Swagger.",
+    ],
+    challenges: [
+      "Keeping mobile, admin, and API behavior aligned across authentication and learning flows.",
+      "Documenting REST APIs clearly enough for ongoing team and client use.",
+    ],
+  },
+  {
+    id: 5,
     name: "LittleLet",
     description:
       "A live website for LittleLet with a modern presentation layer and streamlined user journey.",
@@ -42,28 +113,7 @@ export const projectsData = [
     ],
   },
   {
-    id: 3,
-    name: "EmoyeMed",
-    description:
-      "A live healthcare-focused website for EmoyeMed, built to present the brand clearly and professionally.",
-    tools: ["Live Website", "Responsive UI", "Web Design"],
-    role: "Frontend Developer",
-    code: "",
-    demo: "https://emoyenmed.com",
-    date: "",
-    images: ["/projects/emoyen/icon.png"],
-    videos: [""],
-    highlights: [
-      "Delivered a clean and professional public-facing interface.",
-      "Kept the experience focused on clarity and trust.",
-    ],
-    challenges: [
-      "Presenting brand information in a simple, accessible format.",
-      "Ensuring consistent visual balance across viewport sizes.",
-    ],
-  },
-  {
-    id: 4,
+    id: 6,
     name: "ICMA LMS",
     description:
       "A web-based learning management system designed to facilitate online learning, course management, and progress tracking.",
@@ -84,7 +134,7 @@ export const projectsData = [
     ],
   },
   {
-    id: 5,
+    id: 7,
     name: "VehiScan-ParkHere",
     description:
       "A car-parking application that helps drivers find real-time parking updates near them.",
@@ -105,7 +155,7 @@ export const projectsData = [
     ],
   },
   {
-    id: 6,
+    id: 8,
     name: "Rankify",
     description:
       "A web-based feedback and ranking platform designed to collect student feedback and surface teacher rankings.",
@@ -126,7 +176,7 @@ export const projectsData = [
     ],
   },
   {
-    id: 7,
+    id: 9,
     name: "tarbiyat",
     description:
       "A comprehensive internship management system designed to streamline the internship process for students, mentors, teachers, and administrative officials.",
@@ -147,7 +197,7 @@ export const projectsData = [
     ],
   },
   {
-    id: 8,
+    id: 10,
     name: "StoreG",
     description:
       "A cloud-based storage solution for securely managing, storing, uploading, and retrieving files efficiently.",
@@ -168,7 +218,7 @@ export const projectsData = [
     ],
   },
   {
-    id: 9,
+    id: 11,
     name: "Android Projects / PakVista",
     description:
       "A curated Android projects repository that includes PakVista, a tourist guide app for exploring Pakistan's cultural and travel destinations.",

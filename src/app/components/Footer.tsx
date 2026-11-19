@@ -31,8 +31,8 @@ const Footer = () => (
             />
           </Link>
           <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
-            Professional Full Stack Developer dedicated to crafting immersive,
-            high-performance digital experiences with cutting-edge technology.
+            Software engineer building web and mobile products, from system
+            design through production maintenance.
           </p>
         </div>
 
@@ -47,6 +47,7 @@ const Footer = () => (
               { label: "Experience", to: "experience" },
               { label: "Skills", to: "skills" },
               { label: "Projects", to: "projects" },
+              { label: "Education", to: "education" },
               { label: "Contact", to: "contact" },
             ].map((item) => (
               <li key={item.to}>

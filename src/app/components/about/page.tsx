@@ -90,16 +90,16 @@ function About() {
 
             <div className="flex flex-wrap gap-8 items-center mt-4">
               <div className="flex flex-col">
-                <span className="text-3xl font-black text-white">2+</span>
+                <span className="text-3xl font-black text-white">10+</span>
                 <span className="text-xs text-slate-500 uppercase tracking-widest font-bold">
-                  Years Experience
+                  Products Shipped
                 </span>
               </div>
               <div className="w-[1px] h-10 bg-white/10" />
               <div className="flex flex-col">
-                <span className="text-3xl font-black text-white">10+</span>
+                <span className="text-3xl font-black text-white">Web</span>
                 <span className="text-xs text-slate-500 uppercase tracking-widest font-bold">
-                  Global Projects
+                  & Mobile
                 </span>
               </div>
               <div className="w-[1px] h-10 bg-white/10" />

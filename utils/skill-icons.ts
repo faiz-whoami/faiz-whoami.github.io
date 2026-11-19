@@ -18,7 +18,16 @@ import {
   SiAdobeillustrator,
   SiAdobephotoshop,
   SiFreelancer,
+  SiSharp,
+  SiAngular,
+  SiNestjs,
+  SiDotnet,
+  SiPostgresql,
+  SiDocker,
+  SiNginx,
+  SiStripe,
 } from "react-icons/si";
+import { FaDatabase } from "react-icons/fa";
 import { IconType } from "react-icons";
 
 export const getSkillIcon = (skill: string): IconType => {
@@ -65,6 +74,34 @@ export const getSkillIcon = (skill: string): IconType => {
     case "materialui":
     case "mui":
       return SiMui;
+    case "c#":
+    case "csharp":
+      return SiSharp;
+    case "sql":
+      return SiMysql;
+    case "react native":
+      return SiReact;
+    case "angular":
+    case "angularjs":
+      return SiAngular;
+    case "nestjs":
+    case "nest.js":
+      return SiNestjs;
+    case "asp.net core":
+    case "asp.net":
+    case "dotnet":
+      return SiDotnet;
+    case "postgresql":
+    case "postgres":
+      return SiPostgresql;
+    case "sql server":
+      return FaDatabase;
+    case "stripe":
+      return SiStripe;
+    case "docker":
+      return SiDocker;
+    case "nginx":
+      return SiNginx;
     case "canva":
       return SiCanva;
     case "illustrator":
@@ -97,6 +134,7 @@ export const getSkillColor = (skill: string): string => {
       return "#991b1b"; // Red-800
     case "node js":
     case "nodejs":
+    case "node.js":
       return "#b91c1c"; // Red-700
     case "mongodb":
       return "#7f1d1d"; // Red-900

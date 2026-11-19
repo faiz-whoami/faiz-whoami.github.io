@@ -16,22 +16,22 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Faiz Uddin | Full Stack Developer",
+  title: "Faiz Uddin | Software Engineer",
   description:
-    "Explore the portfolio of Faiz Uddin, a Professional Full Stack Developer specializing in Nest.js, React.js, mongo, and modern web solutions. Built for performance and user experience.",
+    "Portfolio of Faiz Uddin, a software engineer building web and mobile products with TypeScript, React, React Native, NestJS, and ASP.NET Core.",
   keywords: [
     "Faiz Uddin",
-    "Full Stack Developer",
-    "Nest.js Portfolio",
-    "Chatbot Development",
     "Software Engineer",
-    "React Developer",
+    "Full Stack Developer",
+    "React Native",
+    "NestJS",
+    "ASP.NET Core",
   ],
   authors: [{ name: "Faiz Uddin" }],
   openGraph: {
     title: "Faiz Uddin | Personal Portfolio",
     description:
-      "Full Stack Developer & AI Automation Expert — Building the future of the web.",
+      "Software engineer building web and mobile products across SaaS, fintech, healthcare, and learning.",
     url: "https://faiz-udd.vercel.app",
     siteName: "Faiz uddin Portfolio",
     images: [
@@ -47,8 +47,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Faiz Uddin | Full Stack Developer",
-    description: "Building modern web applications and AI automations.",
+    title: "Faiz Uddin | Software Engineer",
+    description:
+      "Web and mobile products with React, React Native, NestJS, and ASP.NET Core.",
     images: ["/Website-overview.png"],
   },
   robots: {
