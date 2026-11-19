@@ -1,6 +1,6 @@
 export const personalData = {
   name: "Faiz Uddin",
-  profile: "/profile2.jpg",
+  profile: "/profile_pic.png",
   designation: "Software Engineer",
   designationAlternateWords: [
     "Software Engineer.",
